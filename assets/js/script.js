@@ -274,14 +274,32 @@
       submitBtn.disabled = true;
       btnSpan.textContent = lang === 'ar' ? 'جارٍ الإرسال...' : 'Sending...';
 
-      await simulateDelay(1500);
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action || 'https://formsubmit.co/ajax/mohamedsalahacc5050@gmail.com', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
 
-      // Show success
-      contactForm.reset();
-      submitBtn.disabled = false;
-      btnSpan.textContent = originalText;
-      formSuccess.classList.add('show');
-      setTimeout(() => formSuccess.classList.remove('show'), 5000);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        // Show success
+        contactForm.reset();
+        submitBtn.disabled = false;
+        btnSpan.textContent = originalText;
+        formSuccess.classList.add('show');
+        setTimeout(() => formSuccess.classList.remove('show'), 5000);
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert(lang === 'ar' ? 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى لاحقاً.' : 'An error occurred while sending. Please try again later.');
+        submitBtn.disabled = false;
+        btnSpan.textContent = originalText;
+      }
     });
   }
 

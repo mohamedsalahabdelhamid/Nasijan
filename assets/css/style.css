@@ -1333,6 +1333,21 @@ body.lang-ar .about-badge-box {
   height: 50px;
   width: auto;
   margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: all var(--transition);
+}
+
+[data-theme="dark"] .footer-logo {
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+[data-theme="light"] .footer-logo {
+  mix-blend-mode: normal;
+  filter: none;
+  background: white;
+  padding: 3px;
+  box-shadow: 0 4px 12px rgba(13,27,62,0.06);
 }
 
 .footer-brand p {
