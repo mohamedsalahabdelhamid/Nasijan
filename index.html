@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nasijan | Garment Identity & Accessories</title>
+  <meta name="description"
+    content="Nasijan – Premium garment accessories including woven labels, badges, hang tags, ribbons and custom solutions for brands and factories in Egypt." />
+  <meta name="keywords"
+    content="Nasijan, woven labels, garment accessories, hang tags, badges, ribbons, Egypt, نسيجان" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/img/Logo.png" alt="Nasijan Logo" class="logo-img" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">NASIJAN</span>
+          <span class="nav-brand-sub" data-key="nav_brand_sub">Garment Identity &amp; Accessories</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-key="nav_home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-key="nav_services">Services</a></li>
+        <li><a href="#products" class="nav-link" data-key="nav_products">Products</a></li>
+        <li><a href="#about" class="nav-link" data-key="nav_about">About</a></li>
+        <li><a href="#contact" class="nav-link" data-key="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- Language Toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-en">عربي</span>
+          <span class="lang-ar">EN</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun icon-light"></i>
+          <i class="fa-solid fa-moon icon-dark"></i>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="container hero-container">
+      <div class="hero-grid">
+
+        <!-- LEFT: Brand + Text Content -->
+        <div class="hero-content reveal">
+
+          <!-- Logo lockup: image + name centered, tagline below -->
+          <div class="hero-brand-lockup">
+            <img src="assets/img/Logo.png" alt="Nasijan Logo" class="hero-logo-img" />
+            <div class="hero-lockup-text">
+              <span class="hero-lockup-name">NASIJAN</span>
+              <span class="hero-lockup-sub" data-key="nav_brand_sub">Garment Identity &amp; Accessories</span>
+            </div>
+          </div>
+
+          <div class="hero-divider-line"></div>
+
+          <h1 class="hero-headline" data-key="hero_tagline">Woven Into Your Brand</h1>
+
+          <p class="hero-subtitle" data-key="hero_subtitle">
+            Crafting premium garment accessories that tell your brand's story — woven labels, badges, hang tags,
+            ribbons, and custom solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#products" class="btn btn-primary" data-key="hero_cta_primary">
+              <i class="fa-solid fa-layer-group"></i> Explore Products
+            </a>
+            <a href="#contact" class="btn btn-outline" data-key="hero_cta_secondary">
+              <i class="fa-regular fa-envelope"></i> Get a Quote
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">150+</span>
+              <span class="stat-label" data-key="stat_brands">Brands</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label" data-key="stat_years">Years Exp.</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">1M+</span>
+              <span class="stat-label" data-key="stat_pieces">Pieces/Year</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Product Image Composition -->
+        <div class="hero-visual reveal">
+          <div class="hero-glow-ring"></div>
+
+          <div class="hero-float-pill top-pill">
+            <i class="fa-solid fa-award"></i>
+            <span data-key="prod_premium">Premium Quality</span>
+          </div>
+
+          <div class="hero-img-card main-card">
+            <img src="assets/img/img_woven_label.jpg" alt="Woven Label" loading="eager" />
+            <div class="hero-card-label">
+              <i class="fa-solid fa-tag"></i>
+              <span data-key="prod_label_title">Woven Labels</span>
+            </div>
+          </div>
+
+          <div class="hero-img-card sub-card">
+            <img src="assets/img/img_hang_tag.jpg" alt="Hang Tag" loading="eager" />
+            <div class="hero-card-label">
+              <i class="fa-solid fa-ticket"></i>
+              <span data-key="prod_hangtag_title">Hang Tags</span>
+            </div>
+          </div>
+
+          <div class="hero-img-card accent-card">
+            <img src="assets/img/img_badge.jpg" alt="Badge" loading="eager" />
+            <div class="hero-card-label">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span data-key="prod_badge_title">Badges</span>
+            </div>
+          </div>
+
+          <div class="hero-float-pill bottom-pill">
+            <span>🇪🇬</span>
+            <span data-key="about_made">Made in Egypt</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-key="services_tag">What We Do</span>
+        <h2 class="section-title" data-key="services_title">Our Services</h2>
+        <p class="section-subtitle" data-key="services_subtitle">End-to-end garment identity solutions tailored for
+          factories and brands of all sizes.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-tags"></i></div>
+          <h3 data-key="svc_labels">Woven Labels</h3>
+          <p data-key="svc_labels_desc">High-thread-count woven labels that carry your brand with precision and
+            elegance.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 data-key="svc_badges">Badges & Patches</h3>
+          <p data-key="svc_badges_desc">Embroidered and printed badges that add a distinctive identity to every garment.
+          </p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-ticket"></i></div>
+          <h3 data-key="svc_hangtags">Hang Tags</h3>
+          <p data-key="svc_hangtags_desc">Premium printed hang tags with custom finishes — foil, emboss, and more.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-ribbon"></i></div>
+          <h3 data-key="svc_ribbons">Ribbons & Tapes</h3>
+          <p data-key="svc_ribbons_desc">Custom-printed satin and grosgrain ribbons to complement your brand packaging.
+          </p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 data-key="svc_custom">Custom Solutions</h3>
+          <p data-key="svc_custom_desc">Have a unique vision? We design bespoke solutions to make your brand
+            unforgettable.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-industry"></i></div>
+          <h3 data-key="svc_bulk">Bulk Production</h3>
+          <p data-key="svc_bulk_desc">Scalable production capabilities to support factories and large-scale order
+            demands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-key="products_tag">Gallery</span>
+        <h2 class="section-title" data-key="products_title">Our Products</h2>
+        <p class="section-subtitle" data-key="products_subtitle">A glimpse into the craftsmanship behind every label,
+          badge, and tag we produce.</p>
+      </div>
+
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_woven_label.jpg" alt="Woven Label" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_label_tag">Woven Labels</span>
+              <p data-key="prod_label_desc">Premium navy & copper thread woven labels for garments and uniforms.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_label_title">Woven Labels</h3>
+            <span class="product-badge" data-key="prod_bestseller">Best Seller</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_badge.jpg" alt="Embroidered Badge" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_badge_tag">Badges</span>
+              <p data-key="prod_badge_desc">Detailed embroidered badges and patches with rich copper-gold threading.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_badge_title">Badges & Patches</h3>
+            <span class="product-badge premium" data-key="prod_premium">Premium</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_hang_tag.jpg" alt="Hang Tag" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_hangtag_tag">Hang Tags</span>
+              <p data-key="prod_hangtag_desc">Thick cardstock hang tags with copper foil stamping for a luxury feel.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_hangtag_title">Hang Tags</h3>
+            <span class="product-badge" data-key="prod_popular">Popular</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_ribbon.jpg" alt="Premium Ribbon" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_ribbon_tag">Ribbons</span>
+              <p data-key="prod_ribbon_desc">Satin ribbons with gold-printed branding, rolled for easy application.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_ribbon_title">Ribbons &amp; Tapes</h3>
+            <span class="product-badge new" data-key="prod_new">New</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_care_label.jpg" alt="Care Label" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_care_tag">Care Labels</span>
+              <p data-key="prod_care_desc">Woven care &amp; washing instruction labels with gold symbol threading.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_care_title">Care Labels</h3>
+            <span class="product-badge" data-key="prod_essential">Essential</span>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img-wrap">
+            <img src="assets/img/img_printed_label.jpg" alt="Printed Label" loading="lazy" />
+            <div class="product-overlay">
+              <span class="product-tag" data-key="prod_printed_tag">Printed Labels</span>
+              <p data-key="prod_printed_desc">Premium satin printed labels with copper foil hot-stamping finish.</p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 data-key="prod_printed_title">Printed Labels</h3>
+            <span class="product-badge premium" data-key="prod_premium">Premium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-img-stack">
+            <img src="assets/img/Cover.png" alt="Nasijan Products" class="about-cover-img" />
+            <div class="about-badge-box">
+              <span class="about-flag">🇪🇬</span>
+              <span data-key="about_made">Made in Egypt</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <span class="section-tag" data-key="about_tag">Who We Are</span>
+          <h2 class="section-title" data-key="about_title">Built for Brands. Built for Factories.</h2>
+          <p data-key="about_p1">Nasijan is Egypt's premier manufacturer of garment identity and accessories. We partner
+            with fashion brands, clothing factories, and retail companies to deliver accessories that truly represent a
+            brand's DNA.</p>
+          <p data-key="about_p2">From a simple woven label to a fully branded packaging system — we handle it all with
+            precision, speed, and a relentless commitment to quality.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <i class="fa-solid fa-gem"></i>
+              <span data-key="val_quality">Premium Quality</span>
+            </div>
+            <div class="value-item">
+              <i class="fa-solid fa-bolt"></i>
+              <span data-key="val_speed">Fast Turnaround</span>
+            </div>
+            <div class="value-item">
+              <i class="fa-solid fa-handshake"></i>
+              <span data-key="val_custom">Custom Solutions</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary" data-key="about_cta">Work With Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-key="contact_tag">Get In Touch</span>
+        <h2 class="section-title" data-key="contact_title">Start Your Project</h2>
+        <p class="section-subtitle" data-key="contact_subtitle">Ready to elevate your brand identity? Send us a message
+          and we'll get back to you within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-key="form_name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name"
+                  data-placeholder-key="form_name_ph" />
+              </div>
+              <div class="form-group">
+                <label for="company" data-key="form_company">Company / Brand</label>
+                <input type="text" id="company" name="company" placeholder="Your Company"
+                  data-placeholder-key="form_company_ph" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" data-key="form_email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="service" data-key="form_service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="" data-key="form_select_ph">Select a service...</option>
+                <option value="woven_labels" data-key="svc_labels">Woven Labels</option>
+                <option value="badges" data-key="svc_badges">Badges & Patches</option>
+                <option value="hang_tags" data-key="svc_hangtags">Hang Tags</option>
+                <option value="ribbons" data-key="svc_ribbons">Ribbons & Tapes</option>
+                <option value="custom" data-key="svc_custom">Custom Solutions</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-key="form_message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."
+                data-placeholder-key="form_message_ph"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span data-key="form_submit">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-key="form_success_msg">Message sent! We'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info reveal">
+          <div class="contact-info-card">
+            <h3 data-key="contact_info_title">Contact Information</h3>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong data-key="contact_location_label">Location</strong>
+                <p data-key="contact_location">Egypt — serving brands worldwide</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong data-key="contact_phone_label">Phone / WhatsApp</strong>
+                <p><a href="tel:+201148295790" dir="ltr">+20 114 829 5790</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong data-key="contact_email_label">Email</strong>
+                <p><a href="mailto:mohamedsalahacc5050@gmail.com">mohamedsalahacc5050@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+              <div>
+                <strong>Facebook</strong>
+                <p><a href="https://www.facebook.com/Nasjan/" target="_blank"
+                    rel="noopener noreferrer">facebook.com/Nasjan</a></p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/Nasjan/" target="_blank" class="social-btn" aria-label="Facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://wa.me/201148295790" target="_blank" class="social-btn" aria-label="WhatsApp"><i
+                  class="fa-brands fa-whatsapp"></i></a>
+              <a href="mailto:mohamedsalahacc5050@gmail.com" class="social-btn" aria-label="Email"><i
+                  class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/Logo.png" alt="Nasijan Logo" class="footer-logo" />
+          <p data-key="footer_desc">Premium garment identity & accessories. Woven into every brand story.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-key="footer_quick_links">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-key="nav_home">Home</a></li>
+            <li><a href="#services" data-key="nav_services">Services</a></li>
+            <li><a href="#products" data-key="nav_products">Products</a></li>
+            <li><a href="#about" data-key="nav_about">About</a></li>
+            <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4 data-key="footer_our_services">Our Products</h4>
+          <ul>
+            <li data-key="svc_labels">Woven Labels</li>
+            <li data-key="svc_badges">Badges & Patches</li>
+            <li data-key="svc_hangtags">Hang Tags</li>
+            <li data-key="svc_ribbons">Ribbons & Tapes</li>
+            <li data-key="svc_custom">Custom Solutions</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-key="footer_copy">© 2024 Nasijan. All rights reserved.</p>
+        <p data-key="footer_egypt">🇪🇬 Made in Egypt, Crafted for the World</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

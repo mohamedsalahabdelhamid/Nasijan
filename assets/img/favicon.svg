@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B3E"/>
+      <stop offset="100%" style="stop-color:#1E3060"/>
+    </linearGradient>
+    <linearGradient id="copperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9A96E"/>
+      <stop offset="50%" style="stop-color:#B87333"/>
+      <stop offset="100%" style="stop-color:#D4956A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="url(#navyGrad)"/>
+  <!-- N letter paths - two vertical pillars with diagonal copper stripe -->
+  <!-- Left pillar -->
+  <rect x="12" y="14" width="9" height="36" rx="2" fill="#E8E0D0"/>
+  <!-- Right pillar -->
+  <rect x="43" y="14" width="9" height="36" rx="2" fill="#E8E0D0"/>
+  <!-- Diagonal copper stripe (the signature element of the N) -->
+  <polygon points="12,14 21,14 52,50 43,50" fill="url(#copperGrad)"/>
+</svg>
